@@ -1,0 +1,23 @@
+
+body {
+  background: #fafafa;
+  color: #125688;
+  font-family: Montserrat;
+}
+
+.landing {
+  margin: 30px auto;
+}
+
+.btn.btn-flat {
+  background-color: transparent;
+  box-shadow: none;
+}
+
+.detail-box {
+  background-color: white;
+  border: 1px solid #edeeee;
+  border-radius: 3px;
+  padding: 10px 0;
+  text-align: center;
+}

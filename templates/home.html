@@ -1,0 +1,43 @@
+<html>
+  <head>
+    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='style.css') }}">
+  </head>
+  <body>
+    <div class="container landing">
+      <div class="row">
+        <div class=""></div>
+
+      </div>
+       
+    </div>
+    <div class="container landing">
+      <div class="row">
+      <div class="col s12 m6 offset-m3">
+        <div class="row">
+          <div class="detail-box">
+            <form action="/submit" method="post">
+              <label for="ticker">Ticker symbol:</label><br>
+              <input type="text" id="ticker" name="ticker"><br>
+              <label for="threshold">Price threshold:</label><br>
+              <input type="text" id="threshold" name="threshold"><br>
+              <label for="frequency">Check frequency:</label><br>
+              <select id="frequency" name="frequency">
+                <option value="hourly">Hourly</option>
+                <option value="daily">Daily</option>
+              </select><br>
+              <label for="notification_type">Notification type:</label><br>
+              <select id="notification_type" name="notification_type">
+                <option value="email">Email</option>
+                <input type="email" id="email" name="email"><br>
+                <!-- <option value="text">Text message</option> -->
+              </select><br><br>
+              <input type="submit" value="Submit">
+            </form>
+          </div>
+        </div>
+        </div>
+      </div>
+      </div>
+      </div>
+  </body>
+</html>
